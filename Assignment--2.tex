@@ -1,0 +1,112 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+
+
+\title{AI1103 - Assignment - 2}
+\author{Name : Vamsi Preetham Jumala \\Roll No : CS20BTECH11058}
+
+
+\begin{document}
+
+\maketitle
+
+
+Download all python codes from
+\begin{lstlisting}
+
+https://github.com/VamsiPreetham-21/AI1103-Assignment-2/blog/main/Assignment2.py
+
+\end{lstlisting}
+
+
+Download all latex codes from
+\begin{lstlisting}
+
+https://github.com/VamsiPreetham-21/AI1103-Assignment-2/blog/main/Assignment2.tex
+\end{lstlisting}
+
+GATE 2012(EC), Q37 :\\
+A fair coin is tossed till a head appeared for the first time. The probability that the number of tosses required is odd,\\
+
+Solution:\\
+Let 'X' is a random variable denoting the trail at which the first head appeared\\
+\begin{align}
+    &\Pr(X=1)=\frac{1}{2}\\
+    &\Pr(X=3)=(\frac{1}{2})^3\\
+    \text{Similarly}\\
+    &\Pr(X=n)=(\frac{1}{2})^n
+\end{align}
+\text{Probability that the number of tosses required is odd,is }
+\begin{align}
+    &=\Pr(X=1)+\Pr(X=3)+\Pr(X=5)+.....\\
+    &=\frac{1}{2}+(\frac{1}{2})^3+(\frac{1}{2})^5+....\\
+    &=\frac{1}{2}[1+(\frac{1}{2})^2+(\frac{1}{2})^4+.....]\\
+    &=\frac{1}{2}[1+(\frac{1}{4})+(\frac{1}{4})^2+.....]\\
+    &=\frac{1}{2}[\frac{1}{1-\frac{1}{4}}]\\
+    &=\frac{1}{2}*\frac{4}{3}\\
+    &=\frac{2}{3}
+\end{align}
+\end{document}
